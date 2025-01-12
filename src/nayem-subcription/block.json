@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "nayem/subcription",
+	"version": "1.0.1",
+	"title": "custome subscription block",
+	"category": "text",
+	"icon": "palmtree",
+	"description": "blah blah blah",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true,
+		"color": {
+			"text": true,
+			"background": true
+		},
+		"anchor": true
+	},
+	"textdomain": "nayem-subcription",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"titleText": {
+			"type": "string",
+			"selector": "h3",
+			"default": "Take 10% off your first order",
+			"source": "text"
+		},
+		"btnText": {
+			"type": "string",
+			"selector": "button",
+			"default": "Subscribe",
+			"source": "text"
+		},
+		"justText": {
+			"type": "string",
+			"selector": "p",
+			"default": "Subscribe to our newsletter and get 10% off your first purchase",
+			"source": "html"
+		},
+
+		"list_id": {
+			"type": "string"
+		},
+		"doubleoptin": {
+			"type": "boolean"
+		},
+
+
+		"image": {
+			"type": "object",
+			"default": { "id": 0 }
+		}
+	}
+}

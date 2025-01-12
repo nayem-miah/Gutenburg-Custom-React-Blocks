@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "nayem/tailwindtest-block",
+	"version": "1.0.1",
+	"title": "tailwindcss test block",
+	"category": "text",
+	"icon": "shortcode",
+	"description": "blah blah blah",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true,
+		"color": {
+			"text": true,
+			"background": true
+		},
+		"anchor": true
+	},
+	"textdomain": "tailwind-test-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Hello from Block 2!"
+		}
+	}
+}
